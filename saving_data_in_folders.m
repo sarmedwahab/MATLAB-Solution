@@ -1,4 +1,4 @@
-%% THIS IS WORKING FINE.
+% this file is for saving results and figures in separate folders.
 
 clear all; clc;
 
@@ -10,7 +10,7 @@ for i = 1:5
     plot(x,y,"bo"); hold on;
     a = plot(x,y) ; hold off;
     
-    dest_dir = "D:\folderpath\figure" + i ;
+    dest_dir = "D:\folderpath" + i ;
     mkdir(dest_dir);
   
     filename = "plot"+string(i)+".png";
